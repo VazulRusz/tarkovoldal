@@ -1,0 +1,105 @@
+/* Alapstílusok */
+body {
+    font-family: bender, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px; /* Betűméret */
+    font-style: normal; /* Betűstílus */
+    font-weight: 400; /* Betűvastagság */
+    word-spacing: 1px; /* Szóköz */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.menu {
+    width: 250px;
+    height: 100%;
+    background-color: #f0f0f0;
+    float: left;
+}
+
+.menu input[type="text"] {
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 5px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Tartalom középre igazítása */
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.menu ul li a img {
+    max-height: 100%; /* Az ikon magassága legyen azonos a tartalom magasságával */
+    margin-right: 10px; /* Választható: térköz az ikon és a szöveg között */
+}
+
+.menu ul li a:hover {
+    background-color: #ccc;
+}
+
+.content {
+    margin-left: 250px; /* Menü miatt eltoljuk a tartalmat */
+    padding: 20px;
+}
+
+/* style.css */
+
+.chart-box {
+   /* border: 1px solid #ccc; /* keret a chart körül */
+    padding: 20px; /* belső tér a chart körül */
+    border-radius: 5px; /* lekerekített sarkok */
+    background-color: #9a8866; /* háttérszín */
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; /* középre igazítás */
+}
+
+
+
+/* Vízszintes vonalak */
+/* Vízszintes vonalak */
+.line {
+    border-top: 0.5px solid #9a8866;
+    margin: 10px auto; /* Rövidebb margin a szöveg körül */
+    width: 89%; /* A vonal szélessége az oldalon */
+    position: relative; /* Eltérések beállítása */
+}
+
+
+/* Felirat stílusa */
+.line span {
+    background-color: black; /* Háttérszín */
+    padding: 0 10px; /* Kicsi térköz a felirat és a háttér között */
+    position: relative;
+    top: -10px; /* Felirat eltolása a vonal felett */
+}
+
+/* Felirat középre igazítása */
+.kozep {
+    text-align: center;
+    margin-top: 10px; /* Távolság a vízszintes vonalaktól */
+}
+
+/* Felirat stílusa */
+.kozep span {
+    color: #9a8866; /* Szöveg színe */
+    background-color: black; /* Háttérszín */
+    padding: 0 10px; /* Kicsi térköz a felirat és a háttér között */
+    position: relative;
+    font-weight: 400;
+}
+

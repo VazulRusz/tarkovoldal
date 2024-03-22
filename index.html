@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VazulOldala.hu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="line"></div> <!-- Első vízszintes vonal -->
+    <div class="kozep"><span>TARKOV CHART VIEWER </span></div> <!-- Felirat középen a második vízszintes vonal fölött -->
+    <div class="line"></div> <!-- Második vízszintes vonal -->
+
+    <div class="menu">
+        <input type="text" id="search" placeholder="Keresés...">
+        <ul>
+            <li><a href="#" class="menu-item" data-item="respirator"><img src="kep/respirator.png" alt="Respirator" class="menu-icon"> Respirator</a></li>
+            <li><a href="#" class="menu-item" data-item="rivals"><img src="kep/rivals.png" alt="Rivals" class="menu-icon"> Rivals</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="chart-box">
+            <canvas id="chart-container" width="400" height="400"></canvas>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+    <script src="script.js"></script>
+</body>
+</html>
